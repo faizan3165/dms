@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const sequelize = new Sequelize('dms', 'root', '3165', {
+const sequelize = new Sequelize('dms', 'root', null, {
 	host: process.env.HOST,
 	dialect: 'mysql'
 });

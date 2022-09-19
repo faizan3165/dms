@@ -6,7 +6,7 @@ dotenv.config();
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-const myDatabase = new Sequelize('dms', 'root', '3165', {
+const myDatabase = new Sequelize('docmanagement', 'root', null, {
 	host: process.env.HOST,
 	logging: false,
 	dialect: 'mysql',
