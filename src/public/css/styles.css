@@ -1,0 +1,457 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+
+.red {
+  border: 1px solid red;
+}
+
+.green {
+  border: 1px solid green;
+}
+
+.container {
+  margin: 0px 20px;
+}
+
+.header {
+  height: 600px;
+  border-bottom: 1px solid #ccc;
+}
+.header .top-nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.header .top-nav .logo {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.header .top-nav .logo img {
+  height: 50%;
+  margin-left: 10px;
+}
+.header .top-nav .logo i {
+  font-size: 28px;
+  opacity: 0.5;
+  margin-top: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.header .top-nav .logo .logo-icon:hover ~ .for-users {
+  display: flex;
+  flex-direction: column;
+}
+.header .top-nav .logo .for-users {
+  border-radius: 3px;
+  position: absolute;
+  border: 1px solid #d8d8d8;
+  background-color: #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  top: 60px;
+  padding: 10px;
+  display: none;
+}
+.header .top-nav .logo .for-users a {
+  margin: 5px;
+}
+.header .top-nav .intro {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.header .top-nav .intro .intro-icon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header .top-nav .intro .intro-icon h3 {
+  margin: 0;
+  font-size: 15px;
+}
+.header .top-nav .intro span {
+  display: block;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.header .top-nav .support {
+  width: 20%;
+  padding-top: 25px;
+}
+.header .top-nav .support i {
+  padding-right: 5px;
+}
+.header .image-nav {
+  height: 400px;
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .image-nav .image-title {
+  color: whitesmoke;
+  font-size: 35px;
+  margin: 40px 0;
+}
+.header .image-nav .search-btn {
+  border-radius: 25px;
+  padding: 10px;
+  background-color: #f7d800;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+.header .image-nav .search-btn .search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #f7d800;
+  padding-left: 10px;
+}
+.header .image-nav .search-btn i {
+  cursor: pointer;
+}
+.header .bottom-nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.header .bottom-nav .bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+.header .bottom-nav span {
+  display: block;
+  padding-top: 5px;
+}
+.header .bottom-nav i {
+  color: #59c1a9;
+}
+
+.popular-specialty,
+.hospital-and-clinic,
+.doctors,
+.handbook {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+}
+.popular-specialty .title-section,
+.hospital-and-clinic .title-section,
+.doctors .title-section,
+.handbook .title-section {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.popular-specialty .title-section .span-title,
+.hospital-and-clinic .title-section .span-title,
+.doctors .title-section .span-title,
+.handbook .title-section .span-title {
+  display: block;
+  width: 20%;
+  font-size: 20px;
+  font-weight: 600;
+}
+.popular-specialty .title-section .view-btn,
+.hospital-and-clinic .title-section .view-btn,
+.doctors .title-section .view-btn,
+.handbook .title-section .view-btn {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+.popular-specialty .title-section .view-btn a,
+.hospital-and-clinic .title-section .view-btn a,
+.doctors .title-section .view-btn a,
+.handbook .title-section .view-btn a {
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+}
+.popular-specialty .title-section .view-btn a:hover,
+.hospital-and-clinic .title-section .view-btn a:hover,
+.doctors .title-section .view-btn a:hover,
+.handbook .title-section .view-btn a:hover {
+  border: 1px solid #f7d800;
+  background-color: #f7d800;
+}
+.popular-specialty .title-section .view-btn a span,
+.hospital-and-clinic .title-section .view-btn a span,
+.doctors .title-section .view-btn a span,
+.handbook .title-section .view-btn a span {
+  padding: 5px;
+  width: 100%;
+  color: black;
+}
+.popular-specialty .title-section .view-btn a span:hover,
+.hospital-and-clinic .title-section .view-btn a span:hover,
+.doctors .title-section .view-btn a span:hover,
+.handbook .title-section .view-btn a span:hover {
+  color: white;
+}
+.popular-specialty .slide,
+.hospital-and-clinic .slide,
+.doctors .slide,
+.handbook .slide {
+  height: 300px;
+}
+.popular-specialty .slide .my-slick-slide,
+.hospital-and-clinic .slide .my-slick-slide,
+.doctors .slide .my-slick-slide,
+.handbook .slide .my-slick-slide {
+  width: 100%;
+  height: 100%;
+}
+.popular-specialty .slide .my-slick-slide .div-slide,
+.hospital-and-clinic .slide .my-slick-slide .div-slide,
+.doctors .slide .my-slick-slide .div-slide,
+.handbook .slide .my-slick-slide .div-slide {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+.popular-specialty .slide .my-slick-slide .div-slide .image-slide,
+.hospital-and-clinic .slide .my-slick-slide .div-slide .image-slide,
+.doctors .slide .my-slick-slide .div-slide .image-slide,
+.handbook .slide .my-slick-slide .div-slide .image-slide {
+  height: 200px;
+  background-image: url("../images/specialty/speciality1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 325px 200px;
+}
+.popular-specialty .slide .my-slick-slide .div-slide .div-title,
+.hospital-and-clinic .slide .my-slick-slide .div-slide .div-title,
+.doctors .slide .my-slick-slide .div-slide .div-title,
+.handbook .slide .my-slick-slide .div-slide .div-title {
+  background-color: #f5efef;
+  width: 325px;
+  margin-left: 17px;
+}
+.popular-specialty .slide .my-slick-slide .div-slide .div-title span,
+.hospital-and-clinic .slide .my-slick-slide .div-slide .div-title span,
+.doctors .slide .my-slick-slide .div-slide .div-title span,
+.handbook .slide .my-slick-slide .div-slide .div-title span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+}
+.popular-specialty .slide .my-slick-slide .arrow-left,
+.hospital-and-clinic .slide .my-slick-slide .arrow-left,
+.doctors .slide .my-slick-slide .arrow-left,
+.handbook .slide .my-slick-slide .arrow-left {
+  border: 1px solid #ccc;
+  font-size: 30px;
+  padding: 15px;
+  color: #ccc;
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 50%;
+  left: -15px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.popular-specialty .slide .my-slick-slide .arrow-right,
+.hospital-and-clinic .slide .my-slick-slide .arrow-right,
+.doctors .slide .my-slick-slide .arrow-right,
+.handbook .slide .my-slick-slide .arrow-right {
+  border: 1px solid #ccc;
+  font-size: 30px;
+  padding: 15px;
+  color: #ccc;
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 50%;
+  right: -15px;
+  cursor: pointer;
+}
+
+.doctors .slide .my-slick-slide .div-slide {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8e8e8;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.doctors .slide .my-slick-slide .div-slide:hover {
+  background-color: #f1ee90;
+}
+.doctors .slide .my-slick-slide .div-slide .doctor-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.doctors .slide .my-slick-slide .div-slide .doctors-info {
+  text-align: center;
+}
+.doctors .slide .my-slick-slide .div-slide .doctors-info .name {
+  font-weight: 600;
+  padding-top: 5px;
+  display: block;
+}
+.doctors .slide .my-slick-slide .div-slide .doctors-info .specialty {
+  padding-top: 5px;
+}
+.doctors .slide .my-slick-slide .div-slide .booking-count {
+  text-align: center;
+  color: #59c1a9;
+  margin: 30px 0 5px 0;
+}
+
+.handbook .slide {
+  height: 300px;
+}
+.handbook .slide .handbook-slide {
+  width: 100%;
+  height: 100%;
+}
+.handbook .slide .handbook-slide .div-slide {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+.handbook .slide .handbook-slide .div-slide img {
+  height: 200px;
+  width: 300px;
+}
+.handbook .slide .handbook-slide .div-slide .post-info {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.handbook .slide .handbook-slide .div-slide .post-title {
+  font-weight: 600;
+}
+.handbook .slide .handbook-slide .div-slide .content {
+  margin-top: 15px;
+}
+.handbook .arrow-left {
+  border: 1px solid #ccc;
+  font-size: 30px;
+  padding: 15px;
+  color: #ccc;
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 50%;
+  left: -15px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.handbook .arrow-right {
+  border: 1px solid #ccc;
+  font-size: 30px;
+  padding: 15px;
+  color: #ccc;
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 50%;
+  right: -15px;
+  cursor: pointer;
+}
+
+.contact {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #e8e8e8;
+}
+.contact .left-side {
+  width: 50%;
+  padding-left: 20px;
+}
+.contact .left-side .title {
+  display: block;
+  font-size: 40px;
+  margin-top: 30px;
+}
+.contact .left-side .second-title {
+  margin-top: 30px;
+  font-size: 25px;
+  display: block;
+}
+.contact .left-side .third-title {
+  font-size: 25px;
+  margin-top: 10px;
+  display: block;
+}
+.contact .left-side .contact-btn {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 30px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+}
+.contact .left-side .contact-btn:hover {
+  background-color: #f7d800;
+}
+.contact .left-side .contact-btn span {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.contact .right-side {
+  width: 50%;
+  margin: auto;
+}
+
+.auto-resizable-iframe {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  height: 100px;
+  text-align: center;
+  background-color: #cccccc;
+  margin: 0 -20px;
+}
+footer span {
+  display: block;
+  padding-top: 10px;
+}/*# sourceMappingURL=styles.css.map */
