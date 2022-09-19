@@ -10,7 +10,8 @@ let myDatabase = new Sequelize('docmanagement', 'root', '', {
 	host: '127.0.0.1',
 	logging: false,
 	dialect: 'mysql',
-	storage: './session.mysql'
+	storage: './session.mysql',
+	port: 3306
 });
 
 let sessionStore = new SequelizeStore({
