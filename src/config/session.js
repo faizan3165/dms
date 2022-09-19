@@ -4,20 +4,20 @@ import session from 'express-session';
 
 dotenv.config();
 
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
+let SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-const myDatabase = new Sequelize('docmanagement', 'root', '', {
+let myDatabase = new Sequelize('docmanagement', 'root', '', {
 	host: '127.0.0.1',
 	logging: false,
 	dialect: 'mysql',
 	storage: './session.mysql'
 });
 
-const sessionStore = new SequelizeStore({
+let sessionStore = new SequelizeStore({
 	db: myDatabase
 });
 
-export const configSession = (app) => {
+export let configSession = (app) => {
 	app.use(
 		session({
 			key: 'express.sid',
